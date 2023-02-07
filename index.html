@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicholas Cheek</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="logo-box">
+                <i id="logo-image" class="fa fa-solid fa-dice-d20"></i>
+                <p id="logo-text">nicholas cheek</p>
+            </div>
+            <div id="nav-link-box"></div>
+                <a class="nav-link" href="#work">Work</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="mailto: nicholascheekdev@gmail.com">nicholascheekdev@gmail.com</a>
+            </div>
+        </nav>
+        <main>
+            <div id="work">
+                <div id="slideshow-container">
+                    <img class="mySlides" src="FordyToo.JPG">
+                    <h1 class="slide-title">fordytoo.com</h1>
+                    <p class="slide-description">Full site build / maintenance / content creation</p>
+                    <a class="slide-link" href = "https://www.fordytoo.com">See More</a>
+                    <img class="mySlides" src="DrumMachine.JPG">
+                    <h1 class="slide-title">Drum Machine</h1>
+                    <p class="slide-description">Keyboard-based React App drumkit</p>
+                    <a class="slide-link" href = "https://nicholascheek.github.io/DrumMachine/">See More</a>
+                    <img class="mySlides" src="RandomQuoteMachine.JPG">
+                    <h1 class="slide-title">Random Quote Machine</h1>
+                    <p class="slide-description">Color changing React quote machine</p>
+                    <a class="slide-link" href = "https://nicholascheek.github.io/RandomQuoteMachine/">See More</a>
+                    <button class="slideshow-button display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="slideshow-button display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+            </div>
+            <div id="about">
+                <div id="about-me">
+                    <div class="left">
+                        <h1>Hi, I'm Nick</h1>
+                    </div>
+                    <div class="right">
+                        <p>I'm a hard working, self taught front end web developer. I have experience with analyzing customer needs, working as part of a team, and using software for manipulating media content. I am adaptable and a very fast learner, as I am able to pick up and work with new technologies on the fly in order to meet a customers needs.</p>
+                    </div>
+                </div>
+                <div id="certifications">
+                    <h1>Certifications</h1>
+                    <div class="about-item">
+                        <div class="left">
+                            <p>Responsive Web Design</p>
+                        </div>
+                        <div class="right">
+                            <p>November 2022</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="left">
+                            <p>JavaScript Algorithms and Data Structures</p>
+                        </div>
+                        <div class="right">
+                            <p>December 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact">
+                    <h1>Let's Connect</h1>
+                    <div id="contact-bar">
+                        <a href="https://github.com/NicholasCheek">
+                            <i class="fab fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicholas-cheek-b7a29680">
+                            <i class="fab fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="mailto: nicholascheekdev@gmail.com">
+                            <i class="fa fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var y = document.getElementsByClassName("slide-title");
+  var z = document.getElementsByClassName("slide-description");
+  var a = document.getElementsByClassName("slide-link");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    y[i].style.display = "none";
+    z[i].style.display = "none";
+    a[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+  y[slideIndex-1].style.display = "block";
+  z[slideIndex-1].style.display = "block";
+  a[slideIndex-1].style.display = "block";
+}
+
+    </script>
+</html>
