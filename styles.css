@@ -121,10 +121,12 @@ main {
     background-color: transparent;
     border: none;
     color: var(--color-tertiary);
+    font-size: 1rem;
+    transition: font-size 1s;
 }
 
 .slideshow-button:hover {
-    border: 1px solid var(--color-tertiary);
+    font-size: 3rem;
 }
 
 .display-left {
