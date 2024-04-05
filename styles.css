@@ -160,13 +160,23 @@ main {
     padding: 0;
 }
 
+.about-text {
+    color: var(--color-quaternary);
+    width: 55%;
+}
+
 .left {
-    width: 49.5%;
+    width: 35%;
+}
+
+.center {
+    color: var(--color-tertiary);
+    width: 35%;
 }
 
 .right {
-    width: 49.5%;
-    color: var(--color-quaternary)
+    color: var(--color-quaternary);
+    width: 29%;
 }
 
 .about-item {
