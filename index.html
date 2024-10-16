@@ -25,6 +25,10 @@
         <main>
             <div id="work">
                 <div id="slideshow-container">
+                    <img class="mySlides" src="thothCRM.png">
+                    <h1 class="slide-title">thothCRM</h1>
+                    <p class="slide-description">This is a simple example Client Relationship Management System made with Angular and Spring, hosted with AWS</p>
+                    <a class="slide-link" href = "http://thothcrm.s3-website-us-east-1.amazonaws.com/companies">See More</a>
                     <img class="mySlides" src="FordyToo.JPG">
                     <h1 class="slide-title">fordytoo.com</h1>
                     <p class="slide-description">This is my personal blog where I share my love of tabletop wargames and RPGs</p>
@@ -67,7 +71,7 @@
                         <h1>Hi, I'm Nick</h1>
                     </div>
                     <div class="about-text">
-                        <p>Dynamic software developer with a passion for problem-solving and innovation. Adept at crafting efficient code and collaborating with teams to deliver high-quality solutions. Quick learner with a commitment to staying updated on emerging technologies. Eager to contribute to a forward-thinking team dedicated to pushing the boundaries of technology.</p>
+                        <p>Driven software developer passionate about problem-solving and innovation. Skilled in writing efficient code and collaborating within teams to deliver high-quality solutions. Quick to adapt and committed to staying current with emerging technologies. Excited to contribute to a forward-thinking team that pushes the boundaries of technology.</p>
                     </div>
                 </div>
                 <div id="education">
@@ -80,12 +84,34 @@
                             <p>Western Governors University</p>
                         </div>
                         <div class="right">
-                            <p>Ongoing</p>
+                            <p>May 2023 - October 2024</p>
                         </div>
                     </div>
                 </div>
                 <div id="certifications">
                     <h1>Certifications</h1>
+                    <div class="about-item">
+                        <div class="left">
+                            <p>Back End Developer</p>
+                        </div>
+                        <div class="center">
+                            <p>WGU</p>
+                        </div>
+                        <div class="right">
+                            <p>September 2024</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="left">
+                            <p>Front End Developer</p>
+                        </div>
+                        <div class="center">
+                            <p>WGU</p>
+                        </div>
+                        <div class="right">
+                            <p>April 2024</p>
+                        </div>
+                    </div>
                     <div class="about-item">
                         <div class="left">
                             <p>ITIL Foundation</p>
@@ -153,7 +179,7 @@ function showDivs(n) {
   var z = document.getElementsByClassName("slide-description");
   var a = document.getElementsByClassName("slide-link");
   if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
+  if (n < 1) {slideIndex = x.length};
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
     y[i].style.display = "none";
